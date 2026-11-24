@@ -8,16 +8,16 @@ function FilterToggle() {
     <div className="flex gap-2">
       <button
         onClick={() => setFilterMode('all')}
-        className={`cursor-pointer rounded px-3 py-2 text-sm font-medium ${
-          filterMode === 'all' ? 'bg-blue-600 text-white' : 'border text-gray-700'
+        className={`cursor-pointer rounded-xl px-4 py-2 text-sm font-semibold transition ${
+          filterMode === 'all' ? 'bg-emerald-600 text-white shadow-md' : 'bg-white text-gray-600 shadow-sm'
         }`}
       >
         Tất cả
       </button>
       <button
         onClick={() => setFilterMode('favorite')}
-        className={`cursor-pointer rounded px-3 py-2 text-sm font-medium ${
-          filterMode === 'favorite' ? 'bg-blue-600 text-white' : 'border text-gray-700'
+        className={`cursor-pointer rounded-xl px-4 py-2 text-sm font-semibold transition ${
+          filterMode === 'favorite' ? 'bg-emerald-600 text-white shadow-md' : 'bg-white text-gray-600 shadow-sm'
         }`}
       >
         Yêu thích

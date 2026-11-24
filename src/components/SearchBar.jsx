@@ -10,7 +10,7 @@ function SearchBar() {
       value={searchText}
       onChange={(e) => setSearchText(e.target.value)}
       placeholder="Tìm theo tên sản phẩm..."
-      className="w-full rounded border px-3 py-2 text-sm shadow-sm"
+      className="w-full rounded-xl bg-white px-4 py-3 text-sm shadow-md outline-none focus:ring-2 focus:ring-emerald-500"
     />
   );
 }
